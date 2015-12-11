@@ -27,6 +27,7 @@ passport.serializeUser(function(user, done) {
 passport.deserializeUser(function(obj, done) {
   done(null, obj);
 });
+
 // Use the FacebookStrategy within Passport.
 passport.use(new FacebookStrategy({
     clientID: config.facebook_api_key,
