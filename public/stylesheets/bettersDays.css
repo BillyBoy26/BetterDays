@@ -1,0 +1,43 @@
+.mainContent{
+    margin-top:52px;
+    width:100%;
+    height: 200px;
+
+}
+
+
+.timeline{
+    border: 1px black dotted;
+}
+
+
+h2{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
+
+}
+h2:before, h2:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 49%;
+    height: 1px;
+    content: '\a0';
+    background-color: #000000;
+}
+h2:before {
+    margin-left: -52%;
+    text-align: right;
+}
+
+h2:after {
+    margin-left: 2%;
+    text-align: right;
+}
+.color {
+    background-color: #ccc;
+}
