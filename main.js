@@ -94,4 +94,6 @@ function ensureAuthenticated(req, res, next) {
   if (req.isAuthenticated()) { return next(); }
   res.redirect('/login')
 }
+console.log('starting the Express (NodeJS) Web server');
 app.listen(3000);
+console.log('Webserver is listening on port 3000');
