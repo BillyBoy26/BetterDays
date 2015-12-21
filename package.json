@@ -15,7 +15,7 @@
     "ejs": "~0.8.5",
     "express": "~4.9.0",
 	"express-session": "1.7.6",
-	"mysql": "2.4.3",
+	"pg": "4.4.3",
 	"passport": "0.2.1",
 	"passport-facebook": "1.0.2"
   }

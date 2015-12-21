@@ -1,0 +1,3 @@
+var conString = "pg://postgres:postgres@localhost:5432/BetterDays";
+
+exports.conString = conString;
