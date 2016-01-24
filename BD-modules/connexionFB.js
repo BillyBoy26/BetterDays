@@ -31,7 +31,7 @@ passport.use(new FacebookStrategy({
                 if(rows.rowCount===0)
                 {
                     console.log("There is no such user, adding now");
-                    postgres.query("INSERT into bd_user.t_user_usr(usr_id,usr_name) VALUES('"+profile.id+"','"+profile.name.familyName+"','"+profile.name.givenName+"','"+profile.profileUrl+"')");
+                    postgres.query("INSERT into bd_user.t_user_usr(usr_id,usr_name, usr_firstname) VALUES('"+profile.id+"','"+profile.name.familyName+"','"+profile.name.givenName+"')");
                 }
                 else
                 {
